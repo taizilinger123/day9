@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<div id="div" onclick="func1(this)">hello</div>-->
+<div id="div">hello</div>
+<script>
+//    function  func1(self){
+//        console.log(self.getAttribute("id"))
+//    }
+//代码被莫名其妙的删除用ctrl+z就回来了
+    document.getElementById("div").onclick=function () {
+        console.log(this.getAttribute("id"))
+    }
+</script>
+</body>
+</html>
